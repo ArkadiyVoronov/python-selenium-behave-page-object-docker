@@ -1,9 +1,9 @@
-Feature: Search stuff on the main page of Amazon
+Feature: change language coinmarketcap.com
   
-	Background: go to main page of Amazon
+	Background: go to main page of coinmarketcap.com
     Given I open the main page
 
-	  @search @smoke
-	  Scenario: Searching on the main page
-  	  When I search for "LG V30"
-    	Then I should see "LG V30" in search result 
+	  @smoke @locale
+	  Scenario: Change language on the main page
+  	  When I see that the site's representation language has changed
+    	Then I should see lang="ru" result 
