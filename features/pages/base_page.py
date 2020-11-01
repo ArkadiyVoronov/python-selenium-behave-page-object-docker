@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 # this Base class is serving basic attributes for every single page inherited from Page class
 class BasePage(object):
 
-    def __init__(self, driver, base_url='http://www.amazon.com/'):
+    def __init__(self, driver, base_url='https://coinmarketcap.com/'):
         self.base_url = base_url
         self.driver = driver
         self.timeout = 30
